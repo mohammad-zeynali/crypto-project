@@ -60,12 +60,26 @@ class Navbar extends Component {
                     <li className="menu__item"><a href="#home" className="menu__link">خانه</a></li>
                     <li className="menu__item"><a href="#features" className="menu__link">ویژگی ها</a></li>
                     <li className="menu__item"><a href="#roadmap" className="menu__link">نقشه راه</a></li>
-                    <li onClick={this.menuClickHandler.bind(this)} className="menu__item menu__item--down"><a href="#" className="menu__link menu__link--down">صفحات
+                    <li className="menu__item menu__item--down"><a href="#" className="menu__link menu__link--down">صفحات
                             <svg className="menu__down-icon" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M14 7L9 12L14 17" stroke="#637381" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
                             </svg>
                         </a>
-                        <ul className={`dropdown-menu ${this.state.isDropdownMenu ? "dropdown-menu--open" : ""}`}>
+                        <ul className="dropdown-menu ">
+                            <li className="dropdown-menu__item"><a href="#" className="dropdown-menu__link">صفحه وبلاگ</a></li>
+                            <li className="dropdown-menu__item"><a href="#" className="dropdown-menu__link"> صفحه جزئیات وبلاگ</a></li>
+                            <li className="dropdown-menu__item"><a href="#" className="dropdown-menu__link">صفحه فروش توکن</a></li>
+                            <li className="dropdown-menu__item"><a href="#" className="dropdown-menu__link">صفحه پشتیبانی</a></li>
+                            <li className="dropdown-menu__item"><a href="#" className="dropdown-menu__link">صفحه ورود</a></li>
+                            <li className="dropdown-menu__item"><a href="#" className="dropdown-menu__link">صفحه ثبت نام</a></li>
+                        </ul>
+                    </li>
+                    <li onClick={this.menuClickHandler.bind(this)} className="menu__item menu__item-mobile-down"><a href="#" className="menu__link menu__link--down">صفحات
+                            <svg className="menu__down-icon" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 7L9 12L14 17" stroke="#637381" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
+                            </svg>
+                        </a>
+                        <ul className={`dropdown-mobile-menu ${this.state.isDropdownMenu ? "dropdown-mobile-menu--open" : ""}`}>
                             <li className="dropdown-menu__item"><a href="#" className="dropdown-menu__link">صفحه وبلاگ</a></li>
                             <li className="dropdown-menu__item"><a href="#" className="dropdown-menu__link"> صفحه جزئیات وبلاگ</a></li>
                             <li className="dropdown-menu__item"><a href="#" className="dropdown-menu__link">صفحه فروش توکن</a></li>
@@ -74,7 +88,7 @@ class Navbar extends Component {
                             <li className="dropdown-menu__item"><a href="#" className="dropdown-menu__link">صفحه ثبت نام</a></li>
                             <li className="menu__item dropdown-menu__item--last"><a href="#contact" className="menu__link">پشتیبانی</a></li>
                         </ul>
-                        </li>
+                    </li>
                     <li className="menu__item"><a href="#contact" className="menu__link">پشتیبانی</a></li>
                 </ul>
 

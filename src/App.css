@@ -237,19 +237,28 @@ body {
     margin-bottom: 2rem;
     
   }
-  .dropdown-menu{
-    width: 100%;
-    padding: 0;
+  .menu__item--down,
+  .dropdown-menu {
+    display:none;
+  }
+  .menu__item-mobile-down{
+    display:block;
   }
 
- .dropdown-menu--open{
+  .dropdown-mobile-menu{
+    width: 100%;
+    padding: 0;
+    
+  }
+
+ .dropdown-mobile-menu--open{
   top: 4rem;
   opacity: 1;
   visibility: visible;
   
   }
   
-  .dropdown-menu--open .dropdown-menu__item--last{
+  .dropdown-mobile-menu--open .dropdown-menu__item--last{
     display: block;
     visibility: visible;
     margin-top: 2rem;
