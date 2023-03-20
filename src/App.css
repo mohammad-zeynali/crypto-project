@@ -241,14 +241,14 @@ body {
   .dropdown-menu {
     display:none;
   }
-  .menu__item-mobile-down{
+  .menu__item-mobile--down{
     display:block;
   }
 
   .dropdown-mobile-menu{
     width: 100%;
     padding: 0;
-    
+    display:none;
   }
 
  .dropdown-mobile-menu--open{
@@ -256,6 +256,11 @@ body {
   opacity: 1;
   visibility: visible;
   
+  }
+
+  
+  .menu__item-mobile--open .dropdown-mobile-menu{
+    display:block;
   }
   
   .dropdown-mobile-menu--open .dropdown-menu__item--last{

@@ -73,19 +73,15 @@
     transform: rotate(-90deg);
 }
 .menu__item--down,
-.menu__item-mobile-down{
+.menu__item-mobile--down{
     position: relative;
 }
-.menu__item-mobile-down{
+.menu__item-mobile--down{
     display: none;
 }
 .menu__item--down:hover .dropdown-menu{
     opacity: 1;
     visibility: visible;
-}
-.dropdown-menu__item--last{
-    display:none;
-    visibility: hidden;
 }
 .dropdown-menu,
 .dropdown-mobile-menu{
