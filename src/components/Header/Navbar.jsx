@@ -57,7 +57,7 @@ class Navbar extends Component {
                 </a> 
 
                 <ul className={`menu ${this.state.isMenuList ? "menu--open" : ""}`}>
-                    <li className="menu__item"><a href="#home" className="menu__link menu__link--active">خانه</a></li>
+                    <li className="menu__item"><a href="#home" className="menu__link">خانه</a></li>
                     <li className="menu__item"><a href="#features" className="menu__link">ویژگی ها</a></li>
                     <li className="menu__item"><a href="#roadmap" className="menu__link">نقشه راه</a></li>
                     <li onClick={this.menuClickHandler.bind(this)} className="menu__item menu__item--down"><a href="#" className="menu__link menu__link--down">صفحات
